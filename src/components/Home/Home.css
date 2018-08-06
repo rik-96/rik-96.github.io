@@ -1,0 +1,46 @@
+.navbar{
+    text-align: left;
+    padding: 2% 0;
+}
+
+.menuItems{
+    margin-left: 18%;
+}
+
+.brandName{
+    color: #111111;
+    float: left;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: calc(13px + 1.5vw);
+    font-family: 'Trebuchet MS';
+}
+
+.menuItems2bg{
+    padding: 2% 0;
+    background-image: url(images/images.jpeg);
+}
+
+.menuItems2{
+    padding-right: 2%;
+    font-size: calc(1px + 1vw);
+    color: #eee9e9;
+}
+
+.categories{
+    color: #111111;
+    margin-right: 2%;
+    font-size: calc(3px + 1.5vw);
+    font-family: 'Trebuchet MS';
+}
+
+.categories:hover{
+    color: green;
+    border-top: 2px solid green;
+}
+
+@media screen and (min-width: 40em){
+.categories{
+    margin-right: 6%;
+}
+}

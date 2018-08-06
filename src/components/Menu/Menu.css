@@ -1,0 +1,5 @@
+.menucard{
+    z-index: 99 !important;
+    color: red;
+    position: relative;
+}
