@@ -5,11 +5,15 @@ const ShopCard = () => {
   return (
     <div id="shopCard">
       <article id="shopCardList" className="cf artPad">
-        <a href="https://www.google.com" className="no-underline">
-        <div id="shopTitle" className="mv3" >
-          <span className="link2" >Click Here To Shop</span>
+        <div className="shopTitle">Categories</div> 
+        <div className="fl w30 white storeleft">
+          <div className="rightnavitem pointer">Top Picks</div>
+          <div className="rightnavitem pointer">Men</div>
+          <div className="rightnavitem pointer">Women</div>
+          <div className="rightnavitem pointer">Children</div>
+          <div className="rightnavitem pointer">Accessories</div>
         </div>
-      </a>
+        <div className="fr storeright">
         <div className="fl w50 w100">
         <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
           <span className="db aspect-ratio aspect-ratio--1x1">
@@ -99,6 +103,7 @@ const ShopCard = () => {
             </span>
           </span>
         </a>
+        </div>
         </div>
       </article>
     </div>

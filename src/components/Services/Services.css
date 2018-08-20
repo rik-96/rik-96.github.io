@@ -17,6 +17,14 @@
   background-image: url('images/black.jpg');
 }
 
+.leftservicenav{
+  width: 20%;
+}
+
+.rightservicesection{
+  width: 70%;
+}
+
 .bg-blackish{
   background-color: #eae6da;
 }

@@ -3,123 +3,110 @@ import './Services.css'
 
 const Services = () => {
   return (
-    <article className="bg-blackish mt0">
-      <div className="w-20 services_block">
-          <span id="serviceTitle" >Services</span>
-      </div>
-      <div className="cf pa2 resp_div mt4">
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/serv6.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+    <div id="shopCard">
+      <article id="shopCardList" className="cf artPad">
+        <div className="shopTitle">Categories</div> 
+        <div className="fl w30 white storeleft">
+          <div className="rightnavitem pointer">The Garage</div>
+          <div className="rightnavitem pointer">Fuel</div>
+          <div className="rightnavitem pointer">Accessories</div>
+          <div className="rightnavitem pointer">Leather</div>
+          <div className="rightnavitem pointer">Car Parts</div>
+        </div>
+        <div className="fr storeright">
+        <div className="fl w50 w100">
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage: "url("+require('./images/serv5.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Men</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/serv5.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage:"url("+require('./images/serv6.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Women</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/serv7.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage: "url("+require('./images/serv7.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Kids</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/serv6.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage:"url("+require('./images/banner.png')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Bags</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/serv1.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        </div>
+        <div className="fl w50 w100">
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage: "url("+require('./images/serv1.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Kids</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/serv1.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage:"url("+require('./images/banner4.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Accessories</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/banner4.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage: "url("+require('./images/serv5.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Fashion</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/banner.png")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage:"url("+require('./images/serv7.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Fashion</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/black.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        </div>
+        <div className="fl w100">
+        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage: "url("+require('./images/serv1.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Men</strong></div>
+            </span>
+          </span>
         </a>
-        <a href="/" className="fl resp_img pa4-s pa2-ns  link_ grow">
-          <div className="db tc aspect-ratio aspect-ratio--1x1  ">
-            <img src={require("./images/black.jpg")} alt="Service Shop1 Album " className="w-100 db outline black-10 aspect-ratio--object shadow"/>
-          </div>
-          <dl className="mt2 f6 lh-copy">
-            <dt className="clip">Name</dt>
-            <dd className="ml0 black truncate w-100 underline_on_hover serv_name">Shop1</dd>
-            <dt className="clip">Service</dt>
-            <dd className="ml0 gray truncate w-100 underline_on_hover serv_name">Service</dd>
-          </dl>
+        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage:"url("+require('./images/banner.png')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Women</strong></div>
+            </span>
+          </span>
         </a>
-      </div>
-    </article>
+        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage: "url("+require('./images/banner4.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Kids</strong></div>
+            </span>
+          </span>
+        </a>
+        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
+          <span className="db aspect-ratio aspect-ratio--1x1">
+            <span role="img" style={{backgroundImage:"url("+require('./images/serv7.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+              <div className="child_" ><strong>Bags</strong></div>
+            </span>
+          </span>
+        </a>
+        </div>
+        </div>
+      </article>
+    </div>
 
   )
 }

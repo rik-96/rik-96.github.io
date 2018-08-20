@@ -18,6 +18,24 @@
   text-decoration: none;
 }
 
+.shopTitle{
+  color: white;
+  display: none;
+}
+
+.rightnavitem{
+  padding: 3px 5px 10px 15px;
+  margin: 20px 0px 20px 30px;
+  border-bottom: 1px solid grey;
+  color: white;
+  text-align: left;
+  font-family: 'Trebuchet MS';
+}
+
+.rightnavitem:hover{
+  color: #66cd00;
+}
+
 .link2{
   padding-left: 10%;
   color: #eae6da;
@@ -30,10 +48,21 @@
   text-decoration: none;
 }
 
+.rightnav{
+  border: 5px solid white;
+}
 
+.storeleft{
+  width: 20%;
+  background-color: #232b2b;
+}
+
+.storeright{
+  width: 70%;
+}
 
 .child_{
-  font-size: 0.5em;
+  font-size: calc(1px + 1vw);
   color: white;
   width: 80%;
   height: 80%;
@@ -41,12 +70,12 @@
   margin-left: 10%;
   padding-top: 30%;
   visibility: hidden;
-  background-image: url('images/black.jpg');
+  background-color: black;
 }
 
 .parent_:hover .child_{
   visibility: visible;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #shopCardList{
@@ -69,10 +98,25 @@
   width: 50%;
 }
 .w25{
-  width: 50%;
+  width: 100%;
 }
 .w100{
   width: 100%;
+}
+
+.child_{
+  font-size: 10px;
+}
+
+}
+
+@media screen and (min-width: 30em){
+.w50{
+  width: 50%;
+}
+.w25{
+  width: 50%;
+  padding: 20px;
 }
 
 }
@@ -88,13 +132,25 @@
   width: 50%;
 }
 .pad20{
-  padding: 40px;
+  padding: 30px;
 }
 .artPad{
   padding: 30px;
 }
+
 .child_{
-  font-size: 1em;
+  font-size: calc(1px + 1vw);
 }
 
+}
+@media screen and (max-width: 60em){
+  .storeleft{
+    display: none;
+  }
+  .storeright{
+    width: 100%;
+  }
+  .shopTitle{
+    display: block;
+  }
 }

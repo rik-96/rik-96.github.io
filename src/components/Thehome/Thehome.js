@@ -3,109 +3,139 @@ import './Thehome.css';
 
 const Thehome = () => {
   return (
-    <div>
-    <article class="vh-100 dt w-100 bg-black backgroundForHome">
-      <div class="dtc v-mid tc white ph3 ph4-l">
-      </div>
-    </article>
-      <article id="shopCardList" className="cf artPad">
-        <a href="https://www.google.com" className="no-underline">
-        <div id="shopTitle" className="mv3" >
-          <span className="link2" >Shop Now</span>
+    <article>
+    <div className="fl w-100 w-25-l">
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img4.jpeg")+")"}}>
         </div>
       </a>
-        <div className="fl w50 w100">
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage: "url("+require('./images/bann1.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage:"url("+require('./images/bann3.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage: "url("+require('./images/bann2.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage:"url("+require('./images/bann1.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop now</strong></div>
-            </span>
-          </span>
-        </a>
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img20.jpg")+")"}}>
         </div>
-        <div className="fl w50 w100">
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage: "url("+require('./images/bann1.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage:"url("+require('./images/bann5.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage: "url("+require('./images/bann2.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage:"url("+require('./images/bann6.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
+      </a>
+      </div>
+      <div className="fl w-100 w-50-l">
+      <a href="/" 
+      className="fl w-100 link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img3.jpg")+")"}}>
         </div>
-        <div className="fl w100">
-        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage: "url("+require('./images/bann1.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage:"url("+require('./images/bann3.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage: "url("+require('./images/bann2.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
-        <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
-          <span className="db aspect-ratio aspect-ratio--1x1">
-            <span role="img" style={{backgroundImage:"url("+require('./images/bann1.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-              <div className="child_" ><strong>Shop Now</strong></div>
-            </span>
-          </span>
-        </a>
+      </a>
+      </div>
+      <div className="fl w-100 w-25-l">
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img6.jpeg")+")"}}>
         </div>
-      </article>
-    </div>
+      </a>
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img7.jpg")+")"}}>
+        </div>
+      </a>
+      </div>
+      <div className="fl w-100 w-25-l">
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img24.jpg")+")"}}>
+        </div>
+      </a>
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img8.jpg")+")"}}>
+        </div>
+      </a>
+      </div>
+      <div className="fl w-100 w-25-l">
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img25.jpg")+")"}}>
+        </div>
+      </a>
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img15.jpg")+")"}}>
+        </div>
+      </a>
+      </div>
+      <div className="fl w-100 w-25-l">
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img16.jpg")+")"}}>
+        </div>
+      </a>
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img17.jpg")+")"}}>
+        </div>
+      </a>
+      </div>
+      <div className="fl w-100 w-25-l">
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img18.jpg")+")"}}>
+        </div>
+      </a>
+      <a href="/" 
+      className="fl w-50 w-100-l link overflow-hidden ">
+        <div 
+          role="img" 
+          aria-label="Primer movie" 
+          className="grow aspect-ratio--1x1 thehomeitem" 
+          style={{backgroundImage: "url("+require("./images/img9.jpeg")+")"}}>
+        </div>
+      </a>
+      </div>
+    </article>
   )
 }
 

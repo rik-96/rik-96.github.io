@@ -1,6 +1,7 @@
-.navbar{
+.navbar1{
     text-align: left;
     padding: 2% 0;
+    background-color: white;
 }
 
 .menuItems{
@@ -17,7 +18,7 @@
 }
 
 .menuItems2bg{
-    padding: 2% 0;
+    padding: 1% 0 2% 0;
     background-image: url(images/images.jpeg);
 }
 
@@ -32,6 +33,7 @@
     margin-right: 2%;
     font-size: calc(3px + 1.5vw);
     font-family: 'Trebuchet MS';
+    border-top: 2px solid transparent;
 }
 
 .categories:hover{
@@ -42,5 +44,8 @@
 @media screen and (min-width: 40em){
 .categories{
     margin-right: 6%;
+}
+.navbar1{
+    padding: 2% 0 1.5% 0;
 }
 }

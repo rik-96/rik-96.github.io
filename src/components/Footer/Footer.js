@@ -4,43 +4,52 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
-      <footer className="w-100 tc-l bg-center cover bg-black pt4 pb3 ph5 mt0">
-        <section className="cf mb2">
-          <div className="mb4 mb0-ns w-50 fr dn db-ns">
-            <a className="white f5 fw6 tl link dib pv4 mt2 mb4 mb0-l submit_button link_" href="mailto:motormarche@gmail.com" >
-              motormarche.com
-            </a>
+    <div>
+      <div className="w-10 white spacer pa2">
+          Top Picks
+      </div>
+      <footer className="w-100 tc-l bg-center cover mt0">
+        <div className="footerHeadBlock">
+          <div className="footerHead">MotorMarch&eacute;</div>
+          <em className="gray footerHeadTag"> the automotive marketplace </em>
+        </div>
+        <div className="footerFootBlock">
+          <div className="pt3 pt5-ns ph3 dtc-ns w-25-ns footerFootDiv">
+            <div className="pv1"><a href="/">Privacy Policy</a></div>
+            <div className="pv1"><a href="/">Terms And Conditions</a></div>
+            <div className="pv1"><a href="/">About</a></div>
           </div>
-          <div className="mb0-ns fl w-100-s w-50-ns" >
-            <p className="white f4 fw6 mb2 f6 mt0 mb3">
-              Sign up for our newsletter.
-            </p>
-            <input placeholder="Email Address" className="mw-100 w-100 w5-ns f5 input-reset ba b--black-20 pv2 ph4 border-box" />
-            <input class="b system-sans-serif white-80 ph4 pv2 mt4 input-reset ba b--white bg-black pointer f5 dib submit_type" type="submit" value="Submit" />
+          <div className="pt3 pt5-ns ph5 dtc-ns w-25-ns footerFootDiv">
+            <span className="pv1">
+              <a href="https://google.com" className=" " >
+                <FontAwesomeIcon icon={['fab', 'google-plus-g']} color="#555" size="2x" className="footer_icon" />
+              </a>
+            </span>
+            <span className="pv1 ph2 ph4-l">
+              <a href="https://google.com" className=" " >
+                <FontAwesomeIcon icon={['fab', 'facebook']} color="#555" size="2x" className="footer_icon" />
+              </a>
+            </span>
+            <span className="pv1 pr2 pr4-l">
+              <a href="https://google.com" className=" " >
+                <FontAwesomeIcon icon={['fab', 'instagram']} color="#555" size="2x" className="footer_icon" />
+              </a>
+            </span>
+            <span className="pv1">
+              <a href="https://google.com" className=" " >
+                <FontAwesomeIcon icon={['fab', 'twitter']} color="#555" size="2x" className="footer_icon" />
+              </a>
+            </span>
           </div>
-        </section>
-        <div className="dt dt--fixed w-100" >
-          <div className="dn dtc-ns v-mid">
-            <p className="f7 white dib pr3 mb3">
-              Copyright © Motormarche 2018
-            </p>
+          <div className="pt3 pt5-ns ph3 dtc-ns w-25-ns footerFootDiv">
+            <div className="pv1"><a href="/">Shipping Info</a></div>
+            <div className="pv1"><a href="/">Returns / Exchanges</a></div>
+            <div className="pv1"><a href="/">Contact</a></div>
           </div>
         </div>
-        <div className="db dn-ns">
-          <p className="f7 white-70 mt4 tc">
-            Copyright © Motormarche
-          </p>
-        </div>
-        <a href="https://google.com" className="footer_icon " >
-          <FontAwesomeIcon icon={['fab', 'google']} color="#888888" size="1x" className="footer_icon" />
-        </a>
-        <a href="https://fb.com" className="footer_icon " >
-          <FontAwesomeIcon icon={['fab', 'facebook']} color="#888888" size="1x" className="footer_icon" />
-        </a>
-        <a href="https://instagram.com" className="footer_icon ">
-          <FontAwesomeIcon icon={['fab', 'instagram']} color="#888888" size="1x" className="footer_icon" />
-        </a>
+        <div class="f6 pt5 pb2 footerLastLine">© 2018 <b class="ttu">| MOTORMARCH&Eacute; PVT. LTD. |</b> All Rights Reserved</div>
       </footer>
+    </div>
   )
 }
 
