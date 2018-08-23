@@ -9,8 +9,13 @@ class Home extends React.Component {
       super(props);
       this.state = {
         signInEmail: '',
-        signInPassword: ''
+        signInPassword: '',
+        menuDrop: false
       }
+    }
+
+    toggleMenuDrop = () => {
+      this.setState({menuDrop: !(this.state.menuDrop)});
     }
 
     render(){
@@ -20,9 +25,16 @@ class Home extends React.Component {
           <nav className="dt w-100 navbar1" >
             {this.props.signedIn
             ?<div >
+              <span
+              className="fr menuItemMobile pointer"
+              onClick={ () => this.props.dispMenu('signinform')}>
+                <FontAwesomeIcon
+                  icon="bars"
+                />
+              </span>
               <span 
               className="fr menuItems2 pointer"
-              onClick={ () => this.props.dispMenu('signupform')}>
+              onClick={ () => this.toggleMenuDrop()}>
                 <FontAwesomeIcon
                   icon="cart-arrow-down"
                 />
@@ -36,7 +48,7 @@ class Home extends React.Component {
             :<div >
               <span
               className="fr menuItemMobile pointer"
-              onClick={ () => this.props.dispMenu('signinform')}>
+              onClick={ () => this.toggleMenuDrop()}>
                 <FontAwesomeIcon
                   icon="bars"
                 />
@@ -80,6 +92,44 @@ class Home extends React.Component {
               </span>
             </span>
           </nav>
+          { this.state.menuDrop
+            ? 
+            this.props.signedIn
+            ?<div >
+              <div 
+              className="pointer menuDropItems"
+              onClick={ () => this.props.dispMenu('signupform')}>
+                <FontAwesomeIcon
+                  icon="cart-arrow-down"
+                />
+              </div>
+              <div 
+              className="pointer menuDropItems"
+              onClick={() => this.props.changeAccess(false)}>
+                Logout
+              </div>
+            </div>
+            :<div >
+              <div 
+              className="pointer menuDropItems"
+              onClick={ () => this.props.dispMenu('signinform')}>
+                <FontAwesomeIcon
+                  icon="cart-arrow-down"
+                />
+              </div>
+              <div 
+              className="pointer menuDropItems"
+              onClick={ () => this.props.dispMenu('signupform')}>
+                Signup
+              </div>
+              <div 
+              className="pointer menuDropItems"
+              onClick={ () => this.props.dispMenu('signinform')}>
+                Login
+              </div>
+              </div>
+            : ''
+          }
         </div>
       )
     }

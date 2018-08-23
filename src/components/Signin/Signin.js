@@ -10,11 +10,11 @@ class Signin extends React.Component {
   }
 
   onEmailChange = (event) =>{
-    this.setState({signInEmail: event.target.value})
+    this.setState({signInEmail: event.target.value});
   }
 
   onPasswordChange = (event) => {
-    this.setState({signInPassword: event.target.value})
+    this.setState({signInPassword: event.target.value});
   }
 
   onSubmitSignIn = (event) => {
@@ -32,6 +32,8 @@ class Signin extends React.Component {
       if (user.id){
         this.props.loadUser('home');
         this.props.changeAccess(true);
+      } else {
+        alert("Invalid Credentials!")
       }
     })
   }

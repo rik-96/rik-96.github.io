@@ -40,9 +40,20 @@
     display: none;
 }
 
+.menuDropItems{
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 0.7%;
+    font-size: calc(5px + 1vw);
+    color: #111;
+    display: block;
+    background-color: transparent;
+    padding-bottom: 2%;
+}
+
 .categories{
     color: #111111;
-    margin-right: 2%;
+    margin-right: 4%;
     font-size: calc(3px + 1.5vw);
     font-family: 'Trebuchet MS';
     border-top: 2px solid transparent;
