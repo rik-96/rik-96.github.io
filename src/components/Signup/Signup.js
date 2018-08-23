@@ -7,39 +7,98 @@ class Signup extends React.Component {
     this.state = {
       name: '',
       email: '',
-      password: ''
+      password: '',
+      formValidated: false,
+      errorInName: '',
+      errorInEmail: '',
+      errorInPassword: ''
     }
+  }
+
+  checkInputName = (name) => {
+    let error = '';
+    if (!name){
+      error = "Name can't be empty!";
+      this.setState({formValidated: false});
+    }
+    if (typeof name !== undefined){
+      if (!name.match(/^[a-zA-Z]+$/)){
+        this.setState({formValidated: false});
+        error = "Name is not valid";
+      }
+      else if (!(name.length>3 && name.length<21)){
+        this.setState({formValidated: false});
+        error = "Name should contain between 5 and 20 letters";
+      }
+    }
+    this.setState({errorInName: error});
+  }
+
+  checkInputEmail = (email) => {
+    let error = '';
+    if (!email){
+      error = "Email can't be empty!";
+      this.setState({formValidated: false});
+    }
+    if (typeof email !== undefined){
+      let at = email.lastIndexOf('@');
+      let dot = email.lastIndexOf('.');
+
+      if (!(at > 0 && dot > 2 && at < dot && (email.length - dot) > 2)){
+        this.setState({formValidated: false});
+        error = "Email is not valid";
+      }
+    }
+    this.setState({errorInEmail: error});
+  }
+
+  checkInputPassword = (password) => {
+    let error = '';
+    if (!password){
+      error = "Password can't be empty!";
+      this.setState({formValidated: false});
+    }
+    this.setState({errorInPassword: error});
   }
 
   onNameChange = (event) => {
     this.setState({name: event.target.value});
+    this.checkInputName(this.state.name);
   }
 
   onEmailChange = (event) => {
     this.setState({email: event.target.value});
+    this.checkInputEmail(this.state.email);
   }
 
   onPasswordChange = (event) => {
     this.setState({password: event.target.value});
   }
 
+
+
   onSubmitRegister = () => {
-    fetch('https://gentle-tor-25032.herokuapp.com/register', {
-      method: 'post',
-      headers: {'Content-type': 'application/json'},
-      body: JSON.stringify({
-        name: this.state.name,
-        email: this.state.email,
-        password: this.state.password
+    this.checkInputPassword(this.state.password);
+    if (this.state.formValidated) {
+      fetch('https://gentle-tor-25032.herokuapp.com/register', {
+        method: 'post',
+        headers: {'Content-type': 'application/json'},
+        body: JSON.stringify({
+          name: this.state.name,
+          email: this.state.email,
+          password: this.state.password
+        })
       })
-    })
-    .then(res => res.json())
-    .then(user => {
-      if (user[0].id){
-        this.props.loadUser('home');
-        this.props.changeAccess(true);
-      }
-    })
+      .then(res => res.json())
+      .then(user => {
+        if (user[0].id){
+          this.props.loadUser('home');
+          this.props.changeAccess(true);
+        }
+      })
+    } else {
+      alert("Invalid credentials");
+    }
   }
 
   render(){
@@ -61,6 +120,11 @@ class Signup extends React.Component {
                 id="name" 
                 onChange={this.onNameChange}
               />
+              <div className="red pt1">
+                {
+                  this.state.errorInName
+                }
+              </div>
             </div>
             <div className="mt3">
               <label className="db fw4 lh-copy f6" 
@@ -74,6 +138,11 @@ class Signup extends React.Component {
                 id="email-address" 
                 onChange={this.onEmailChange}
               />
+              <div className="red pt1">
+                {
+                  this.state.errorInEmail
+                }
+              </div>
             </div>
             <div className="mt3">
               <label 
@@ -88,6 +157,11 @@ class Signup extends React.Component {
                 id="password" 
                 onChange={this.onPasswordChange}
               />
+              <div className="red pt1">
+                {
+                  this.state.errorInPassword
+                }
+              </div>
             </div>
           </fieldset>
           <div 

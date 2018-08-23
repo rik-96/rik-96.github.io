@@ -1,5 +1,7 @@
 import React from 'react';
 import './Home.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 class Home extends React.Component {
 
@@ -14,11 +16,16 @@ class Home extends React.Component {
     render(){
       return (
         <div>
+            
+          <nav className="dt w-100 navbar1" >
             {this.props.signedIn
-            ?<div className="menuItems2bg">
+            ?<div >
               <span 
-              className="fr menuItems2 pointer">
-                Cart
+              className="fr menuItems2 pointer"
+              onClick={ () => this.props.dispMenu('signupform')}>
+                <FontAwesomeIcon
+                  icon="cart-arrow-down"
+                />
               </span>
               <span 
               className="fr menuItems2 pointer"
@@ -26,10 +33,20 @@ class Home extends React.Component {
                 Logout
               </span>
             </div>
-            :<div className="menuItems2bg">
+            :<div >
+              <span
+              className="fr menuItemMobile pointer"
+              onClick={ () => this.props.dispMenu('signinform')}>
+                <FontAwesomeIcon
+                  icon="bars"
+                />
+              </span>
               <span 
-              className="fr menuItems2 pointer">
-                Cart
+              className="fr menuItems2 pointer"
+              onClick={ () => this.props.dispMenu('signinform')}>
+                <FontAwesomeIcon
+                  icon="cart-arrow-down"
+                />
               </span>
               <span 
               className="fr menuItems2 pointer"
@@ -43,7 +60,6 @@ class Home extends React.Component {
               </span>
             </div>
           }
-          <nav className="dt w-100 navbar1" >
             <span className="brandName pointer">
               <strong>
                 Motormarch&eacute;
