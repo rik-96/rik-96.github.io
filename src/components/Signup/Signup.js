@@ -75,7 +75,7 @@ class Signup extends React.Component {
     this.checkInputName(this.state.name);
     this.checkInputEmail(this.state.email);
     this.checkInputPassword(this.state.password);
-    if (!(this.state.errorInEmail && this.state.errorInName && this.state.errorInPassword)) {
+    if (!(this.state.errorInEmail || this.state.errorInName || this.state.errorInPassword) && (this.state.email && this.state.password && this.state.name)) {
       this.props.dispMenu('progress');
       fetch('https://gentle-tor-25032.herokuapp.com/register', {
         method: 'post',
