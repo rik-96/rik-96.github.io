@@ -8,7 +8,6 @@ class Signup extends React.Component {
       name: '',
       email: '',
       password: '',
-      formValidated: false,
       errorInName: '',
       errorInEmail: '',
       errorInPassword: ''
@@ -19,15 +18,12 @@ class Signup extends React.Component {
     let error = '';
     if (!name){
       error = "Name can't be empty!";
-      this.setState({formValidated: false});
     }
     if (typeof name !== undefined){
       if (!name.match(/^[a-zA-Z]+$/)){
-        this.setState({formValidated: false});
         error = "Name is not valid";
       }
       else if (!(name.length>3 && name.length<21)){
-        this.setState({formValidated: false});
         error = "Name should contain between 5 and 20 letters";
       }
     }
@@ -38,14 +34,13 @@ class Signup extends React.Component {
     let error = '';
     if (!email){
       error = "Email can't be empty!";
-      this.setState({formValidated: false});
     }
     if (typeof email !== undefined){
       let at = email.lastIndexOf('@');
       let dot = email.lastIndexOf('.');
 
       if (!(at > 0 && dot > 2 && at < dot && (email.length - dot) > 2)){
-        this.setState({formValidated: false});
+        console.log(email);
         error = "Email is not valid";
       }
     }
@@ -56,7 +51,6 @@ class Signup extends React.Component {
     let error = '';
     if (!password){
       error = "Password can't be empty!";
-      this.setState({formValidated: false});
     }
     this.setState({errorInPassword: error});
   }
@@ -79,7 +73,8 @@ class Signup extends React.Component {
 
   onSubmitRegister = () => {
     this.checkInputPassword(this.state.password);
-    if (this.state.formValidated) {
+    if (!(this.state.errorInEmail && this.state.errorInName && this.state.errorInPassword)) {
+      this.props.dispMenu('progress');
       fetch('https://gentle-tor-25032.herokuapp.com/register', {
         method: 'post',
         headers: {'Content-type': 'application/json'},
@@ -94,6 +89,9 @@ class Signup extends React.Component {
         if (user[0].id){
           this.props.loadUser('home');
           this.props.changeAccess(true);
+        } else {
+          alert('Invalid Credentials');
+          this.props.dispMenu('signupform');
         }
       })
     } else {

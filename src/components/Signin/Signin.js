@@ -10,15 +10,16 @@ class Signin extends React.Component {
   }
 
   onEmailChange = (event) =>{
-    this.setState({signInEmail: event.target.value});
+    this.setState({signInEmail: event.target.value})
   }
 
   onPasswordChange = (event) => {
-    this.setState({signInPassword: event.target.value});
+    this.setState({signInPassword: event.target.value})
   }
 
   onSubmitSignIn = (event) => {
     event.preventDefault();
+    this.props.dispMenu('progress');
     fetch("https://gentle-tor-25032.herokuapp.com/signin", {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
@@ -33,7 +34,8 @@ class Signin extends React.Component {
         this.props.loadUser('home');
         this.props.changeAccess(true);
       } else {
-        alert("Invalid Credentials!")
+        alert("Invalid Credentials");
+        this.props.dispMenu('signinform');
       }
     })
   }
