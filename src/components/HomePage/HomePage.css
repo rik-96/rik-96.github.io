@@ -1,0 +1,263 @@
+.coverHomePage {
+  height: 100vh;
+  background: url(images/back2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.headHomePage {
+  color: white;
+  font-size: calc(15px + 4vw);
+  font-family: 'Damion';
+  margin-right: 30%;
+  padding-top: 2%;
+  padding-left: 2%;
+  float: left;
+}
+
+.homePageTagline {
+  font-size: calc(3px + 1vw);
+  font-family: "Trebuchet MS";
+  display: block;
+}
+
+.homePageCatLink {
+  color: white;
+  font-family: 'Trebuchet MS';
+  display: block;
+  font-size: calc(10px + 1vw);
+  text-decoration: none;
+  padding: 0;
+}
+.homePageCat {
+  padding-left: 2%;
+  float: left;
+  margin-top: 3%;
+  border-right: 1px solid white;
+  padding-right: 2%;
+}
+.homePageCat:last-child {
+  border: 0px;
+}
+.homePageCatLink:hover {
+  border-bottom: 1px solid white;
+}
+
+.homePageCard{
+  position: absolute;
+  font-family: 'Damion';
+  width: 30%;
+}
+
+.reviewer {
+  font-family: "Trebuchet MS";
+  font-size: calc(1px + 1.5vw);
+  padding: 1%;
+}
+
+.homePageFooter {
+  font-size: calc(10px + 1vw);
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 3% 15%;
+}
+
+.homePageFooter a{
+  color: white;
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+}
+
+.animatedText-1 {
+  -webkit-animation: seconds 10s forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+  animation: seconds 10s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+.animatedText-2 {
+  -webkit-animation: seconds2 10s forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation: seconds2 10s forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  padding: 20% 0 0 0;
+  margin-left: 10%;
+  font-size: calc(10px + 2vw);
+}
+.animatedText-3 {
+  -webkit-animation: seconds3 10s forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation: seconds3 10s forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  padding: 20% 0 0 0;
+  margin-left: 10%;
+  font-size: calc(10px + 2vw);
+}
+.animatedText-4 {
+  -webkit-animation: seconds4 10s forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation: seconds4 10s forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  padding: 20% 0 0 0;
+  margin-left: 10%;
+  font-size: calc(10px + 2vw);
+}
+.animatedText-5 {
+  -webkit-animation: seconds5 10s forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation: seconds5 10s forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  padding: 20% 0 0 0;
+  margin-left: 10%;
+  font-size: calc(10px + 2vw);
+}
+.animatedText-6 {
+  -webkit-animation: seconds6 10s forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+  animation: seconds6 10s forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  padding: 20% 0 0 0;
+  margin-left: 10%;
+  font-size: calc(10px + 2vw);
+}
+@keyframes seconds {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+}
+@keyframes seconds2 {
+  0% {
+    opacity: 1;
+  }
+  19%{
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes seconds3 {
+  0% {
+    opacity: 0;
+  }
+  19%{
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes seconds4 {
+  0% {
+    opacity: 0;
+  }
+  39%{
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  59% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes seconds5 {
+  0% {
+    opacity: 0;
+  }
+  59%{
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes seconds6 {
+  0% {
+    opacity: 0;
+  }
+  79%{
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 80em) {
+  .headHomePage {
+    color: white;
+    font-size: calc(15px + 4vw);
+    font-family: 'Damion';
+    margin-right: 30%;
+    padding-top: 1%;
+    float: none;
+  }
+  .homePageCat {
+    padding: 0 4%;
+  }
+  .homePageCatLink {
+    font-size: calc(8px + 1vw);
+  }
+  .homePageFooter {
+    font-size: calc(8px + 1vw);
+    margin: 0 0 8% 15%;
+  }
+}
+@media screen and (max-width: 40em) {
+  .headHomePage {
+    padding-top: 10%;
+  }
+  .homePageCat {
+    padding: 0 6%;
+    margin-top: 5%;
+  }
+  .homePageTagline{
+    font-size: calc(4px + 1vw);
+  }
+
+}

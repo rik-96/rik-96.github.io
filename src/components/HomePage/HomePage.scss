@@ -1,0 +1,102 @@
+.coverHomePage {
+  height: 100vh;
+  background: url(images/back2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.headHomePage {
+  color: white;
+  font-size: calc(15px + 4vw);
+  font-family: 'Damion';
+  margin-right: 30%;
+  padding-top: 2%;
+  padding-left: 2%;
+  float: left;
+}
+
+.homePageCatLink{
+  color: white;
+  font-family: 'Trebuchet MS';
+  display: block;
+  font-size: calc(10px + 1vw);
+  text-decoration: none;
+  padding: 0;
+}
+
+.homePageCat {
+  padding-left: 2%;
+  float: left;
+  margin-top: 3%;
+  border-right: 1px solid white;
+  padding-right: 2%;
+}
+.homePageCat:last-child {
+  border: 0px;
+}
+
+.homePageCatLink:hover{
+  border-bottom: 1px solid white;
+}
+@while 2 > 1 {
+  @for $j from 1 to 6 {
+    .animatedText-#{$j} {
+      -webkit-animation: seconds 1.0s forwards;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-delay: 5s;
+      animation: seconds 1.0s forwards;
+      animation-iteration-count: 1;
+      animation-delay: 5s;
+      padding: 20% 0 0 0;
+      margin-right: 50%;
+
+    }
+  }
+}
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+  }
+}
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px; 
+  }
+}
+
+
+@media screen and (max-width: 80em){
+  .headHomePage {
+    color: white;
+    font-size: calc(15px + 4vw);
+    font-family: 'Damion';
+    margin-right: 30%;
+    padding-top: 1%;
+    float: none;
+  }
+  .homePageCat {
+    padding: 0 4%;
+  }
+  .homePageCatLink {
+    font-size: calc(8px + 1vw);
+  }
+}
+
+@media screen and (max-width: 40em){
+  .headHomePage{
+    padding-top: 10%;
+  }
+  .homePageCat {
+    padding: 0 6%;
+    margin-top: 5%;
+  }
+}

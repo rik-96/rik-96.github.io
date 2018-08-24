@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import MetaTags from 'react-meta-tags';
+import HomePage from './components/HomePage/HomePage';
 import Home from './components/Home/Home';
 import Progress from './components/Progress/Progress';
 import Signin from './components/Signin/Signin';
@@ -20,7 +21,7 @@ class App extends Component {
     constructor(){
         super();
         this.state = {
-            menuOpened: "home",
+            menuOpened: "homepage",
             signedIn: false
         }
     }
@@ -47,8 +48,12 @@ class App extends Component {
                 <MetaTags>
                     <title> MotorMarche </title>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' />
                 </MetaTags>
-                <Home dispMenu={this.dispMenu} signedIn={this.state.signedIn} changeAccess={this.changeAccess}/>
+                {   this.state.menuOpened === 'homepage'
+                    ? <HomePage dispMenu={this.dispMenu} />
+                    :<Home dispMenu={this.dispMenu} signedIn={this.state.signedIn} changeAccess={this.changeAccess}/>
+                }
                 {
                     this.state.menuOpened === 'home'
                     ? <Thehome />
@@ -60,9 +65,15 @@ class App extends Component {
                     ? <Signin loadUser={this.loadUser} dispMenu={this.dispMenu} changeAccess={this.changeAccess}/>
                     : this.state.menuOpened === 'signupform'
                     ? <Signup loadUser={this.loadUser} dispMenu={this.dispMenu} changeAccess={this.changeAccess}/>
-                    : <Services />
+                    : this.state.menuOpened === 'services'
+                    ? <Services />
+                    : <div></div>
                 }
-                <Footer />
+                {
+                    this.state.menuOpened === 'homepage'
+                    ? <div></div>
+                    : <Footer />
+                }
             </div>
         )
     }

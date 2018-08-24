@@ -27,14 +27,14 @@ class Home extends React.Component {
             ?<div >
               <span
               className="fr menuItemMobile pointer"
-              onClick={ () => this.props.dispMenu('signinform')}>
+              onClick={ () => this.toggleMenuDrop()}>
                 <FontAwesomeIcon
                   icon="bars"
                 />
               </span>
               <span 
               className="fr menuItems2 pointer"
-              onClick={ () => this.toggleMenuDrop()}>
+              onClick={ () => this.props.dispMenu('signinform')}>
                 <FontAwesomeIcon
                   icon="cart-arrow-down"
                 />
@@ -73,9 +73,11 @@ class Home extends React.Component {
             </div>
           }
             <span className="brandName pointer">
-              <strong>
+              <a 
+              onClick={ () => this.props.dispMenu('homepage')}
+              href="#"><strong>
                 Motormarch&eacute;
-              </strong>
+              </strong></a>
             </span>
             <span className="menuItems">
               <span className="categories pointer td v-mid"

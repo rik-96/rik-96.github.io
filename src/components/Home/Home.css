@@ -4,12 +4,17 @@
     background-color: white;
 }
 
+.brandName a{
+    color: #111;
+    text-decoration: none;
+}
+
 .menuItems{
     margin-left: 18%;
 }
 
 .brandName{
-    color: #111111;
+    color: #111;
     float: left;
     padding-right: 5%;
     padding-left: 5%;
