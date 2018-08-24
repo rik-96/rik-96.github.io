@@ -32,7 +32,7 @@
 }
 .homePageCat {
   padding-left: 2%;
-  float: left;
+  display: inline-block;
   margin-top: 3%;
   border-right: 1px solid white;
   padding-right: 2%;
@@ -242,6 +242,7 @@
   }
   .homePageCatLink {
     font-size: calc(8px + 1vw);
+    width: 100%;
   }
   .homePageFooter {
     font-size: calc(8px + 1vw);

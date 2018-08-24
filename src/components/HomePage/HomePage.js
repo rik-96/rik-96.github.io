@@ -11,9 +11,9 @@ const HomePage = ({dispMenu}) => {
         </div>
       </div>
       <div className="animatedText-1">
-        <div className="homePageCat">
+        <div 
+        className="homePageCat">
           <a 
-          onClick={() => dispMenu('store')}
           className="homePageCatLink" href="#">Products</a>
         </div>
         <div 

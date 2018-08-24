@@ -20,7 +20,7 @@ class Signup extends React.Component {
       error = "Name can't be empty!";
     }
     if (typeof name !== undefined){
-      if (!name.match(/^[a-zA-Z]+$/)){
+      if (!name.match(/^[a-zA-Z\s]+$/)){
         error = "Name is not valid";
       }
       else if (!(name.length>3 && name.length<21)){
