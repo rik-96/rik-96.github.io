@@ -7,6 +7,14 @@
   url('Chalkduster.svg#svgFontName') format('svg');
 }
 
+.serviceComing {
+  height: 100vh;
+  padding-top: calc(150px - 5vh);
+  color: white;
+  font-family: 'Damion';
+  font-size: calc(10px + 5vh);
+}
+
 #serviceTitle{
   font-family: 'Trebuchet MS';
   font-size: calc(20px + 1.5vw);

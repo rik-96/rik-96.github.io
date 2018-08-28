@@ -6,7 +6,6 @@ import Home from './components/Home/Home';
 import Progress from './components/Progress/Progress';
 import Signin from './components/Signin/Signin';
 import Signup from './components/Signup/Signup';
-import Thehome from './components/Thehome/Thehome';
 import ShopCard from './components/ShopCard/ShopCard';
 import Services from './components/Services/Services';
 import Footer from './components/Footer/Footer';
@@ -38,7 +37,7 @@ class App extends Component {
 
     loadUser = (data) => {
       this.setState({
-        menuOpened: 'home'
+        menuOpened: 'homepage'
       })
     }
 
@@ -56,7 +55,7 @@ class App extends Component {
                 }
                 {
                     this.state.menuOpened === 'home'
-                    ? <Thehome />
+                    ? <HomePage />
                     : this.state.menuOpened === 'progress'
                     ? <Progress />
                     : this.state.menuOpened === 'store'

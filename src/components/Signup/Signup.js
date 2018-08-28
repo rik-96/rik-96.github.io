@@ -1,4 +1,5 @@
 import React from 'react';
+import './Signup.css';
 
 class Signup extends React.Component {
 
@@ -103,9 +104,10 @@ class Signup extends React.Component {
 
   render(){
     return (
-      <article className="pa4 pv6-ns white-80 bg-black-90">
-        <div className="f7 f4-ns fw6 pb3 pb4-ns">Sign Up</div>
-        <div action="sign-up_submit" method="get" acceptCharset="utf-8">
+      <article className="pa2 bg-car">
+        <div className="bg-white mv5 mh4 mh7-l pa5-ns shadow-2" >
+        <div className="pa3 pb-ns signupTitle">Sign Up</div>
+        <div method="get" acceptCharset="utf-8">
           <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
             <legend className="ph0 mh0 fw6 clip">Sign Up</legend>
             <div className="mt3">
@@ -114,13 +116,13 @@ class Signup extends React.Component {
                 Name
               </label>
               <input 
-                className="pa2 input-reset ba bg-transparent w-100 measure" 
+                className="pa2 input-reset measure ba b--black-70" 
                 type="name" 
-                name="name"  
-                id="name" 
+                name="name" 
+                id="name"
                 onChange={this.onNameChange}
               />
-              <div className="red pt1">
+              <div className="red pt1 errormsg">
                 {
                   this.state.errorInName
                 }
@@ -132,13 +134,13 @@ class Signup extends React.Component {
                 Email address
               </label>
               <input 
-                className="pa2 input-reset ba bg-transparent w-100 measure" 
+                className="pa2 input-reset ba measure ba b--black-70" 
                 type="email" 
                 name="email-address"  
                 id="email-address" 
                 onChange={this.onEmailChange}
               />
-              <div className="red pt1">
+              <div className="red pt1 errormsg">
                 {
                   this.state.errorInEmail
                 }
@@ -151,13 +153,13 @@ class Signup extends React.Component {
                 Password
               </label>
               <input 
-                className="b pa2 input-reset ba bg-transparent" 
+                className="b pa2 input-reset ba measure ba b--black-70" 
                 type="password" 
                 name="password"  
                 id="password" 
                 onChange={this.onPasswordChange}
               />
-              <div className="red pt1">
+              <div className="red pt1 errormsg">
                 {
                   this.state.errorInPassword
                 }
@@ -167,12 +169,13 @@ class Signup extends React.Component {
           <div 
           className="mt3">
             <input 
-              className="b white ph3 pv2 input-reset ba b--white bg-transparent grow pointer f6" 
+              className=" ph3 pv2 input-reset bg-transparent grow pointer f6 submitButton" 
               type="submit" 
               value="Sign Up" 
               onClick={this.onSubmitRegister}
             />
           </div>
+        </div>
         </div>
       </article>
     )

@@ -7,6 +7,12 @@
   url('Chalkduster.svg#svgFontName') format('svg');
 }
 
+#shopCard{
+  background-image: url(./images/back6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 #shopTitle{
   font-family: 'Trebuchet MS';
   width: 60%;
@@ -79,7 +85,6 @@
 }
 
 #shopCardList{
-  background-color: #232b2b;
 }
 
 .shadowed{

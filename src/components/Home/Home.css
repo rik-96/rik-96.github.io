@@ -10,7 +10,7 @@
 }
 
 .menuItems{
-    margin-left: 18%;
+    margin-left: 10%;
 }
 
 .brandName{
@@ -18,7 +18,7 @@
     float: left;
     padding-right: 5%;
     padding-left: 5%;
-    font-size: calc(13px + 1.5vw);
+    font-size: calc(10px + 1.5vw);
     font-family: 'Trebuchet MS';
 }
 
@@ -45,15 +45,20 @@
     display: none;
 }
 
+.cartIcon {
+    padding-top: 0;
+}
+
 .menuDropItems{
     padding-right: 1%;
     padding-left: 1%;
-    padding-top: 0.7%;
+    padding-top: 3%;
     font-size: calc(5px + 1vw);
-    color: #111;
+    color: #ddd;
     display: block;
-    background-color: transparent;
+    background-color: #051016;
     padding-bottom: 2%;
+    font-size: 10px;
 }
 
 .categories{
@@ -71,19 +76,27 @@
 
 @media screen and (max-width: 40em){
     .categories{
-        font-size: calc(6px + 1vw);
+        font-size: calc(7px + 1vw);
     }
     .menuItemMobile{
         font-size: 10px;
     }
     .menuItems{
-        margin-left: 3%;
+        margin-left: 10px;
+    }
+
+    .categories{
+        border-top-width: 1px;
+    }
+
+    .categories:hover{
+        border-top-width: 1px;
     }
 }
 
 @media screen and (min-width: 40em){
 .categories{
-    margin-right: 6%;
+    margin-right: 5%;
 }
 .navbar1{
     padding: 2% 0 1.5% 0;
@@ -94,4 +107,7 @@
 .menuItemMobile{
     display: none;
 }
+.menuDropItems{
+        display: none;
+    }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Signin.css';
 
 class Signin extends React.Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class Signin extends React.Component {
     .then(res => res.json())
     .then(user => {
       if (user.id){
-        this.props.loadUser('home');
+        this.props.loadUser('homepage');
         this.props.changeAccess(true);
       } else {
         alert("Invalid Credentials");
@@ -42,13 +43,13 @@ class Signin extends React.Component {
 
   render(){
     return (
-        <main className="pa4 pv6-ns white-80 bg-black-90">
-          <div className="measure center">
-            <fieldset id="" className="ba b--transparent ph0 mh0">
-              <div className="f7 f4-ns fw6 pb3 pb4-ns">Sign In</div>
+        <main className="pa4 pv6-ns bg-login">
+          <div className="measure center bg-white">
+            <fieldset className="ba ph0 mh0 pv5-ns">
+              <div className=" pb3 pb4-ns signinTitle">Sign In</div>
               <div className="mt3-ns">
-                <label className="db f7 fw6-ns lh-copy f6-ns" htmlFor="email-address">Email</label>
-                <input className="pa2 input-reset ba bg-transparent hover-white w-100" 
+                <label className="db f7 lh-copy f6-ns" htmlFor="email-address">Email</label>
+                <input className="pa2 ba b--black-70 input-reset measure" 
                 type="email" 
                 name="email-address"  
                 id="email-address" 
@@ -56,35 +57,35 @@ class Signin extends React.Component {
                 />
               </div>
               <div className="mv3">
-                <label className="db f7 fw6-ns lh-copy f6-ns" htmlFor="password">Password</label>
+                <label className="db f7 lh-copy f6-ns" htmlFor="password">Password</label>
                 <input 
-                className="b pa2 input-reset ba bg-transparent hover-white w-100" 
+                className="pa2 ba b--black-70 input-reset measure" 
                 type="password" 
                 name="password"  
                 id="password" 
                 onChange={this.onPasswordChange}
                 />
               </div>
-            </fieldset>
             <div className="">
               <input 
-              className="white ph3 pv2 input-reset ba b--white bg-transparent grow pointer f7 f6-ns dib" 
+              className="ph3 pv2 input-reset grow pointer f7 f6-ns dib signinButton" 
               type="submit" 
               value="Sign in"
               onClick={this.onSubmitSignIn} 
               />
             </div>
             <div className="lh-copy mt3">
-              <a href="#0" className="f7 f6-ns link dim white db">Sign up</a>
-              <a href="#0" className="f7 f6-ns link dim white db">Forgot your password?</a>
+              <a href="#0" className="f7 f6-ns link dim black-80 db">Sign up</a>
+              <a href="#0" className="f7 f6-ns link black-80 dim db">Forgot your password?</a>
             </div>
             <div className="pv2 pv3-ns">
               <input 
-              className="black ph3 pv2 input-reset ba b--gray bg-gray grow pointer f7 f6-ns dib" 
+              className="white ph3 pv2 input-reset ba b--black-80 bg-black-80 grow pointer f7 f6-ns dib" 
               type="submit" 
               value="Click here to login as seller"
               />
             </div>
+          </fieldset>
           </div>
         </main>
       )

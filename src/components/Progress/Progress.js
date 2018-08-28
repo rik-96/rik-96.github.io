@@ -8,13 +8,13 @@ const Progress = () => {
       <div>
         <FontAwesomeIcon
           icon="cog"
-          color="#000000"
+          color="#ddd"
           size="6x"
           spin
         />
         <FontAwesomeIcon
           icon="cog"
-          color="#000000"
+          color="#ddd"
           size="4x"
           spin
         />
@@ -22,7 +22,7 @@ const Progress = () => {
       <div>
         <FontAwesomeIcon
           icon="cog"
-          color="#000000"
+          color="#ddd"
           size="6x"
           spin
         />

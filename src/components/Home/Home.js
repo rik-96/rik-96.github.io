@@ -33,7 +33,7 @@ class Home extends React.Component {
                 />
               </span>
               <span 
-              className="fr menuItems2 pointer"
+              className="fr menuItems2 pointer cartIcon"
               onClick={ () => this.props.dispMenu('signinform')}>
                 <FontAwesomeIcon
                   icon="cart-arrow-down"
@@ -54,10 +54,10 @@ class Home extends React.Component {
                 />
               </span>
               <span 
-              className="fr menuItems2 pointer"
+              className="fr menuItems2 pointer cartIcon"
               onClick={ () => this.props.dispMenu('signinform')}>
                 <FontAwesomeIcon
-                  icon="cart-arrow-down"
+                  icon="cart-arrow-down" size="2x"
                 />
               </span>
               <span 
@@ -81,7 +81,7 @@ class Home extends React.Component {
             </span>
             <span className="menuItems">
               <span className="categories pointer td v-mid"
-              onClick={ () => this.props.dispMenu('home')}>
+              onClick={ () => this.props.dispMenu('homepage')}>
                 Home
               </span>
               <span className="categories pointer td v-mid" 
@@ -99,7 +99,7 @@ class Home extends React.Component {
             this.props.signedIn
             ?<div >
               <div 
-              className="pointer menuDropItems"
+              className="pointer menuDropItems cartIcon"
               onClick={ () => this.props.dispMenu('signupform')}>
                 <FontAwesomeIcon
                   icon="cart-arrow-down"
@@ -113,7 +113,7 @@ class Home extends React.Component {
             </div>
             :<div >
               <div 
-              className="pointer menuDropItems"
+              className="pointer menuDropItems cartIcon"
               onClick={ () => this.props.dispMenu('signinform')}>
                 <FontAwesomeIcon
                   icon="cart-arrow-down"

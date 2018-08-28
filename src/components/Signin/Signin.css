@@ -1,0 +1,25 @@
+.bg-login {
+  background-image: url(./images/back6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.signinTitle {
+  font-size: calc(15px + 0.5vw);
+}
+
+
+.signinButton {
+  width: 50%;
+  margin-bottom: 20px;
+  background-color: #1099CC;
+  color: white;
+  border-size: 0px;
+}
+
+@media screen and (min-width: 40em) {
+  .signinButton {
+    width: 30%;
+    margin-bottom: 0;
+  }
+}

@@ -14,6 +14,7 @@ const HomePage = ({dispMenu}) => {
         <div 
         className="homePageCat">
           <a 
+          onClick={() => dispMenu('store')}
           className="homePageCatLink" href="#">Products</a>
         </div>
         <div 
@@ -51,13 +52,6 @@ const HomePage = ({dispMenu}) => {
       <div className=" homePageCard white animatedText-6" >
       Excellent and prompt service. I bought a number of items. Two are excellent. Two are satisfactory.
       <div className="reviewer"> - Mr.XXXX YYYY </div> 
-      </div>
-      <div className="homePageFooter white">
-        <a 
-        onClick={() => dispMenu('home')}
-        href="#">
-          Check out Featured Products >>
-        </a>
       </div>
     </div>
     )
