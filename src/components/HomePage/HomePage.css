@@ -47,7 +47,7 @@
 .homePageCard{
   position: absolute;
   font-family: 'Damion';
-  width: 30%;
+  width: 60%;
 }
 
 .reviewer {
@@ -68,6 +68,7 @@
   text-decoration: none;
   font-family: "Trebuchet MS";
 }
+
 
 .animatedText-1 {
   -webkit-animation: seconds 10s forwards;
