@@ -104,11 +104,11 @@ class Signup extends React.Component {
 
   render(){
     return (
-      <article className="pa2 bg-car">
-        <div className="bg-white mv5 mh4 mh7-l pa5-ns shadow-2" >
-        <div className="pa3 pb-ns signupTitle">Sign Up</div>
-        <div method="get" acceptCharset="utf-8">
-          <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
+      <article className="pa4 pv6-ns bg-car">
+        <div className="measure center bg-white">
+        <div className="ba ph0 mh0 pb3 pv5-ns" >
+        <div className="pb2 pb3-ns pt3 signupTitle">Sign Up</div>
+        <div className="mt3-ns">
             <legend className="ph0 mh0 fw6 clip">Sign Up</legend>
             <div className="mt3">
               <label className="db fw4 lh-copy f6" 
@@ -165,7 +165,6 @@ class Signup extends React.Component {
                 }
               </div>
             </div>
-          </fieldset>
           <div 
           className="mt3">
             <input 
@@ -175,6 +174,7 @@ class Signup extends React.Component {
               onClick={this.onSubmitRegister}
             />
           </div>
+        </div>
         </div>
         </div>
       </article>

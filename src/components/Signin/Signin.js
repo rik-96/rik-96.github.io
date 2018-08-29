@@ -46,7 +46,7 @@ class Signin extends React.Component {
         <main className="pa4 pv6-ns bg-login">
           <div className="measure center bg-white">
             <fieldset className="ba ph0 mh0 pv5-ns">
-              <div className=" pb3 pb4-ns signinTitle">Sign In</div>
+              <div className=" pb3 pb4-ns pt3 signinTitle">Sign In</div>
               <div className="mt3-ns">
                 <label className="db f7 lh-copy f6-ns" htmlFor="email-address">Email</label>
                 <input className="pa2 ba b--black-70 input-reset measure" 

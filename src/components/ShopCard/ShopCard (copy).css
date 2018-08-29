@@ -13,52 +13,20 @@
   background-size: cover;
 }
 
+#shopTitle{
+  font-family: 'Trebuchet MS';
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .no-underline:hover{
   text-decoration: none;
 }
 
 .shopTitle{
-  font-size: calc(15px + 1vw);
   color: white;
   display: none;
-  font-family: 'Trebuchet MS';
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.shopTitle{
-  width: 50%;
-}
-
-.arrow {
-  display: block;
-  width: 100%;
-  line-height: 1.2vh;
-}
-
-.down {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-}
-
-.shopTitle:hover{
-  color: #66cd00;
-}
-
-.categoryDropdown{
-  font-size: calc(10px + 1vw);
-}
-
-.categoryDropdown div{
-  padding-top: 3%;
-  padding-bottom: 3%;
-  float: left;
-  width: 50%;
-}
-
-.categoryDropdown div:hover {
-  color: #66cd00;
 }
 
 .rightnavitem{
@@ -101,19 +69,19 @@
 
 .child_{
   font-size: calc(1px + 1vw);
-  color: #66cd00;
+  color: white;
   width: 80%;
   height: 80%;
   margin-top: 10%;
   margin-left: 10%;
   padding-top: 30%;
   visibility: hidden;
-  background-color: white;
+  background-color: black;
 }
 
 .parent_:hover .child_{
   visibility: visible;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #shopCardList{
