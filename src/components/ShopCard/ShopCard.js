@@ -55,7 +55,7 @@ class ShopCard extends React.Component {
             </a>
             <a href="https://www.google.com" className="fl pad20 w50 grow parent_">
               <span className="db aspect-ratio aspect-ratio--1x1">
-                <span role="img" style={{backgroundImage: "url("+require('./image/img3.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
+                <span role="img" style={{backgroundImage: "url("+require('./image/img11.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
                   <div className="child_" ><strong>Coming Soon</strong></div>
                 </span>
               </span>
@@ -102,27 +102,6 @@ class ShopCard extends React.Component {
             <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
               <span className="db aspect-ratio aspect-ratio--1x1">
                 <span role="img" style={{backgroundImage: "url("+require('./image/img9.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-                  <div className="child_" ><strong>Coming Soon</strong></div>
-                </span>
-              </span>
-            </a>
-            <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
-              <span className="db aspect-ratio aspect-ratio--1x1">
-                <span role="img" style={{backgroundImage:"url("+require('./image/img10.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-                  <div className="child_" ><strong>Coming Soon</strong></div>
-                </span>
-              </span>
-            </a>
-            <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
-              <span className="db aspect-ratio aspect-ratio--1x1">
-                <span role="img" style={{backgroundImage: "url("+require('./image/img11.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
-                  <div className="child_" ><strong>Coming Soon</strong></div>
-                </span>
-              </span>
-            </a>
-            <a href="https://www.google.com" className="fl pad20 w25 grow parent_">
-              <span className="db aspect-ratio aspect-ratio--1x1">
-                <span role="img" style={{backgroundImage:"url("+require('./image/img12.jpg')+")"}} className="bg-center cover aspect-ratio--object shadowed">
                   <div className="child_" ><strong>Coming Soon</strong></div>
                 </span>
               </span>

@@ -11,9 +11,9 @@ import Services from './components/Services/Services';
 import Footer from './components/Footer/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faCartArrowDown, faCog } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCartArrowDown, faCog, faSearch } from '@fortawesome/free-solid-svg-icons';
 
-library.add(fab, faBars, faCartArrowDown, faCog);
+library.add(fab, faBars, faCartArrowDown, faCog, faSearch);
 
 class App extends Component {
 

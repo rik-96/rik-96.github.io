@@ -10,7 +10,8 @@ class Home extends React.Component {
       this.state = {
         signInEmail: '',
         signInPassword: '',
-        menuDrop: false
+        menuDrop: false,
+        togg: false
       }
     }
 
@@ -19,6 +20,7 @@ class Home extends React.Component {
     }
 
     render(){
+      const {togg} = this.state
       return (
         <div>
             
